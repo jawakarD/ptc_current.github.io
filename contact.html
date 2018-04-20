@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>KSRCEM</title>
+
+  <style media="screen">
+    #ptc-map{
+      width : 100%;
+      height : 500px;
+    }
+  </style>
 </head>
 <body>
 
@@ -30,7 +37,7 @@
       <a class="nav-item nav-link active dropdown-toggle" href="#"
       data-toggle="dropdown" id="servicesDropdown"
       aria-haspopup="true" aria-expanded="false">
-      Partners
+      Industrial Colloborators
       </a>
         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
           <a class="dropdown-item" href="partner_ptc.html">PTC</a>
@@ -53,9 +60,22 @@
           <a class="dropdown-item" href="industrialtrainers.html">Industrial Trainers<a>
         </div>
       </div>
-      <a class="nav-item nav-link active" href="activities.html">Activities & events</a><a class="nav-item nav-link active " href="Research.html">Research</a>
-      <a class="nav-item nav-link active" href="contact.html">contact</a>
-    </div><!-- navbar-nav -->
+      <a class="nav-item nav-link active" href="activities.html">Activities & events</a><div class="dropdown">
+        <a class="nav-item nav-link active dropdown-toggle" href="#"
+        data-toggle="dropdown" id="servicesDropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Research
+      </a>
+          <div class="dropdown-menu text-muted" aria-labelledby="servicesDropdown">
+            <a class="dropdown-item " href="research.html">Research</a>
+             <a class="dropdown-item " href="job_order_services.html">Job order services</a>
+             <a class="dropdown-item " href="incubators.html">Incubators<a>
+          </div>
+        </div>
+        <a class="nav-item nav-link active" href="forms&downloads.html">Registration & downloads</a>
+        <a class="nav-item nav-link active" href="gallery.html">Gallery</a>
+        <a class="nav-item nav-link active" href="contact.html">contact</a>
+          </div><!-- navbar-nav -->
   </div><!-- container -->
 </nav>
   <div class="container my-5">
@@ -64,7 +84,13 @@
     <h1 class="blockquote lead">Email : ksrinnovpark@gmail.com</h1>
     <h1 class="blockquote lead">Dr.N.Tiruvenkadam</h1>
   </div>
+
+  <div id="ptc-map">
+
+  </div>
   </div><!-- content container -->
+
+
 
 <footer class="jumbotron jumbotron-fluid text-white mb-0" style="background:#1f6cb0">
     <div class="container">
@@ -76,5 +102,7 @@
 <script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAulT-NhYydhJUnZbDPKRwjKmcsZFsMx9I&callback=initMap"
+    async defer></script>
 </body>
 </html>
